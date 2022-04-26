@@ -188,30 +188,32 @@ body {
   width: 100%;
   padding-bottom:43.472% ;
 }
-.main-visual >.main-slider .content01 >a {
+.main-visual >.main-slider .content01 > a {
   background-image: url(../IMG/section1-1.jpg);
 }
-.main-visual >.main-slider .content02  >a {
+.main-visual >.main-slider .content02 > a {
   background-image: url(../IMG/section1-2-new.jpg);
 }
-.main-visual >.main-slider .content03 >a  {
+.main-visual >.main-slider .content03 > a  {
   background-image: url(../IMG/section1-3.jpg);
 }
-.main-visual >.main-slider .content04  >a {
+.main-visual >.main-slider .content04 > a {
   background-image: url(../IMG/section1-4-new.jpg);
 }
-.main-visual >.main-slider .content05  >a {
+.main-visual >.main-slider .content05 > a {
   background-image: url(../IMG/section1-5.jpg);
 }
-.main-visual >.main-slider .content06  >a {
+.main-visual >.main-slider .content06 > a {
   background-image: url(../IMG/section1-6.jpg);
 }
-.main-visual >.main-slider .content07 >a  {
+.main-visual >.main-slider .content07 > a  {
   background-image: url(../IMG/section1-7.jpg);
 }
-.main-visual >.main-slider .content08 >a  {
+.main-visual >.main-slider .content08 > a  {
   background-image: url(../IMG/section1-8.jpg);
 }
+
+/* --------- 호랑이 그림 설명 --------- */
 .main-visual >.main-slider .content08 .content-info-box {
   margin: 0 8%;
   box-sizing: border-box;
@@ -262,16 +264,16 @@ body {
   font-size: 22px;
 }
 
-.main-visual >.main-slider .content09  >a {
+.main-visual >.main-slider .content09  > a {
   background-image: url(../IMG/section1-9.jpg);
 }
-.main-visual >.main-slider .content10 >a  {
+.main-visual >.main-slider .content10 > a  {
   background-image: url(../IMG/section1-10.jpg);
 }
-.main-visual >.main-slider .content11 >a  {
+.main-visual >.main-slider .content11 > a  {
   background-image: url(../IMG/section1-11.jpg);
 }
-.main-visual >.main-slider .content12 >a  {
+.main-visual >.main-slider .content12 > a  {
   background-image: url(../IMG/section1-12.jpg);
 }
 
@@ -862,9 +864,13 @@ body {
   margin: 0 auto 80px auto;
   padding: 0;
 }
+
+/* ---------------- left ------------------ */
 .section04 >.section04-left {
   width: 26%;
 }
+
+/* ----------------------- left title -------------------- */
 .section04 >.section04-left >.left-title-box {
 
 }
@@ -874,6 +880,8 @@ body {
   font-size: 30px;
   font-weight: 700;
 }
+
+/* ---------------------- left img -------------------------- */
 .section04 >.section04-left >.left-img-box >.img-box > a {
   display: block;
   position: relative;
@@ -896,14 +904,112 @@ body {
   position: relative;
 }
 
-
-
-
-
+/* ----------------------- mid --------------------- */
 .section04 >.section04-mid {
   width: 20.5%;
   margin: 0 3.5%;
 }
+
+/* ----------------------- mid title --------------------- */
+.section04 >.section04-mid >.mid-title-box {
+  position: relative;
+}
+.section04 >.section04-mid >.mid-title-box >.mid-title {
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* ------------------------ 버튼 부분 -------------------- */
+.section04 >.section04-mid >.mid-title-box >.pagination {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.section04 >.section04-mid >.mid-title-box >.pagination >.pagination-area {
+  position: relative;
+  width: 70px;
+  text-align: center;
+}
+
+/* ======= 페이지 수 ====== */
+.section04 >.section04-mid >.mid-title-box >.pagination >.pagination-area >.page-num-box {
+  display: inline;
+  color: #444;
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  bottom: 0;
+}
+.section04 >.section04-mid >.mid-title-box >.pagination >.pagination-area >.page-num-box >.page {
+
+}
+
+/* ====== 슬라이드 버튼 ======= */
+.section04 >.section04-mid >.mid-title-box >.pagination >.pagination-area >.btn-box {
+  cursor: pointer;
+}
+.section04 >.section04-mid >.mid-title-box >.pagination >.pagination-area >.btn-box >.prev {
+  background-image: url(../IMG/btn_swiper_prev.png);
+  position: absolute;
+  top: 2px;
+  margin-top: 0;
+  width: 10px;
+  height: 19px;
+  background-size: 10px 19px;
+  left: 0;
+  right: auto;
+}
+.section04 >.section04-mid >.mid-title-box >.pagination >.pagination-area >.btn-box >.next {
+  background-image: url(../IMG/btn_swiper_next.png);
+  position: absolute;
+  top: 2px;
+  margin-top: 0;
+  width: 10px;
+  height: 19px;
+  background-size: 10px 19px;
+  right: 0;
+  left: auto;
+}
+
+/* ====== 슬라이드 ======= */
+.section04 >.section04-mid >.mid-slider {
+  width: 100%;
+  padding: 0;
+}
+.section04 >.section04-mid >.mid-slider .content {
+  /* width: 295px;
+  margin-right: 10px; */
+}
+.section04 >.section04-mid >.mid-slider .content > a {
+
+}
+.section04 >.section04-mid >.mid-slider .content > a > img {
+  width: 100%;
+  height: auto;
+}
+
+/* ====== img txt ====== */
+.section04 >.section04-mid >.mid-slider .content >.txt-box {
+  margin: 40px 0 20px 0;
+}
+.section04 >.section04-mid >.mid-slider .content >.txt-box > a {
+  font-size: 24px;
+  color: #000;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -1.5px;
+}
+.section04 >.section04-mid >.mid-slider .content >.txt-box >.date {
+  font-size: 18px;
+  color: #000;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+
+
+/* ---------------------- right --------------------- */
 .section04 >.section04-right {
   width: 46.5%;
 }
