@@ -163,7 +163,10 @@ $(document).ready(function(){
 
     // 섹션4 가운데 슬라이드
     $('.section04 >.section04-mid >.mid-slider').slick({
-
+        autoplay : false,
+        dots : false , 
+        arrows : false ,
+        speed : 1000 ,
     })
     // 섹션4 가운데 슬라이드 버튼 
     $('.section04 >.section04-mid >.mid-title-box >.pagination >.pagination-area >.btn-box >.prev').click(function(){
@@ -174,8 +177,32 @@ $(document).ready(function(){
     });
     // 섹션4 가운데 슬라이드 페이지 수
     $('.section04 >.section04-mid >.mid-slider').on('beforeChange', function(event,slick, currentSlide, nextSlide){
-
         $('.section04 >.section04-mid >.mid-title-box >.pagination >.pagination-area >.page-num-box').text(nextSlide+1 + " / 4 ")
       });
+
+
+    // 섹션4 오른쪽 슬라이드
+    $('.section04 >.section04-right >.right-slider').slick({
+        autoplay : false,
+        dots : false , 
+        arrows : false ,
+        speed : 1000 ,
+    })    
+    // 섹션4 오른쪽 슬라이드 버튼 
+    $('.section04 >.section04-right >.right-title-box >.pagination >.pagination-area >.btn-box >.prev').click(function(){
+        $('.section04 >.section04-right >.right-slider').slick('slickPrev')
+    });
+    $('.section04 >.section04-right >.right-title-box >.pagination >.pagination-area >.btn-box >.next').click(function(){
+        $('.section04 >.section04-right >.right-slider').slick('slickNext')
+    });
+    // 섹션4 오른쪽 슬라이드 페이지 수
+    $('.section04 >.section04-right >.right-slider').on('beforeChange', function(event,slick, currentSlide, nextSlide){
+        $('.section04 >.section04-right >.right-title-box >.pagination >.pagination-area >.page-num-box').text(nextSlide+1 + " / 5 ")
+      });
+
+
+
+
+
 
 });

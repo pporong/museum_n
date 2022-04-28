@@ -863,6 +863,7 @@ body {
 .section04 {
   margin: 0 auto 80px auto;
   padding: 0;
+  padding: 0 15px;
 }
 
 /* ---------------- left ------------------ */
@@ -891,6 +892,7 @@ body {
   border: 1px solid #aaa;
   display: inline-block;
 }
+/* ===== left txt ===== */
 .section04 >.section04-left >.left-img-box >.txt-box {
   margin: 40px 0 20px 0;
 }
@@ -902,6 +904,9 @@ body {
   letter-spacing: -1.5px;
   display: block;
   position: relative;
+}
+.section04 >.section04-left >.left-img-box >.txt-box > a:hover {
+  text-decoration: underline;
 }
 
 /* ----------------------- mid --------------------- */
@@ -1000,6 +1005,9 @@ body {
   line-height: 32px;
   letter-spacing: -1.5px;
 }
+.section04 >.section04-mid >.mid-slider .content >.txt-box > a:hover {
+  text-decoration: underline;
+}
 .section04 >.section04-mid >.mid-slider .content >.txt-box >.date {
   font-size: 18px;
   color: #000;
@@ -1012,4 +1020,194 @@ body {
 /* ---------------------- right --------------------- */
 .section04 >.section04-right {
   width: 46.5%;
+}
+.section04 >.section04-right >.right-title-box {
+  position: relative;
+}
+.section04 >.section04-right >.right-title-box >.right-title {
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+
+  position: relative;
+}
+
+/* ------------------- 더보기 버튼 ------------------- */
+.section04 >.section04-right >.right-title-box >.more-btn {
+  position: absolute;
+  top: 10px;
+  left: 180px;
+}
+
+.section04 >.section04-right >.right-title-box >.more-btn i{
+  width: 28px;
+  height: 28px;
+  background-image: url(../IMG/btn_main_on.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+/* -----------------------------------  */
+.section04 >.section04-right >.right-title-box >.pagination {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+.section04 >.section04-right >.right-title-box >.pagination >.pagination-area {
+  position: relative;
+  width: 70px;
+  text-align: center;
+}
+
+/* ======= 페이지 수 ====== */
+.section04 >.section04-right >.right-title-box >.pagination >.pagination-area >.page-num-box {
+  display: inline;
+  color: #444;
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  bottom: 0;
+}
+.section04 >.section04-right >.right-title-box >.pagination >.pagination-area >.page-num-box >.page {
+
+}
+/* ------------------ 슬라이드 화살표 ----------------- */
+.section04 >.section04-right >.right-title-box >.pagination >.pagination-area >.btn-box {
+  cursor: pointer;
+}
+.section04 >.section04-right >.right-title-box >.pagination >.pagination-area >.btn-box >.prev {
+  background-image: url(../IMG/btn_swiper_prev.png);
+  position: absolute;
+  top: 2px;
+  margin-top: 0;
+  width: 10px;
+  height: 19px;
+  background-size: 10px 19px;
+  left: 0;
+  right: auto;
+}
+.section04 >.section04-right >.right-title-box >.pagination >.pagination-area >.btn-box >.next {
+  background-image: url(../IMG/btn_swiper_next.png);
+  position: absolute;
+  top: 2px;
+  margin-top: 0;
+  width: 10px;
+  height: 19px;
+  background-size: 10px 19px;
+  right: 0;
+  left: auto;
+}
+/* ------------------ 섹션4 오른쪽 슬라이드 ------------------- */
+.section04 >.section04-right >.right-slider {
+
+}
+.section04 >.section04-right >.right-slider .content {
+
+}
+.section04 >.section04-right >.right-slider .content >.img-box {
+  min-height: 386px;
+  position: relative;
+  background-color: rgba(0,0, 0, 0.03);
+}
+
+.section04 >.section04-right >.right-slider .content >.img-box > a {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: block;
+  position: static;
+  min-height: 386px;
+}
+.section04 >.section04-right >.right-slider .content01 >.img-box > a {
+  background-image: url(../IMG/section4-right-1.jpg);
+}
+.section04 >.section04-right >.right-slider .content02 >.img-box > a {
+  background-image: url(../IMG/section4-right-2.jpg);
+}
+.section04 >.section04-right >.right-slider .content03 >.img-box > a {
+  background-image: url(../IMG/section4-right-3.jpg);
+}
+.section04 >.section04-right >.right-slider .content04 >.img-box > a {
+  background-image: url(../IMG/section4-right-4.jpg);
+}
+.section04 >.section04-right >.right-slider .content05 >.img-box > a {
+  background-image: url(../IMG/section4-right-5.jpg);
+}
+.section04 >.section04-right >.right-slider .content >.img-box > a >.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ====== slider txt ====== */
+.section04 >.section04-right >.right-slider .content >.txt-box {
+  margin: 40px 0 20px 0;
+  cursor: pointer;
+}
+.section04 >.section04-right >.right-slider .content >.txt-box > a {
+  font-size: 24px;
+  color: #000;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -1.5px;
+}
+.section04 >.section04-right >.right-slider .content >.txt-box:hover > a {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------- */
+
+/* ======================== 푸터 ============================ */
+.footer-wrap {
+
+}
+.footer-wrap >.footer-top {
+  border-top: 1px solid #c8c8c8;
+  padding: 75px 0 60px 0;
+}
+.footer-wrap >.footer-top >.f-depth01 {
+
+}
+.footer-wrap >.footer-top >.f-depth01 > li {
+  width: 12%;
+  word-break: keep-all;
+  line-height: normal;
+}
+.footer-wrap >.footer-top >.f-depth01 > li:nth-child(7) {
+  width: 17%;
+}
+.footer-wrap >.footer-top >.f-depth01 > li:last-child {
+  width: 11%;
+}
+
+.footer-wrap >.footer-top >.f-depth01 > li > a {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+}
+.footer-wrap >.footer-top >.f-depth01 > li > a:hover {
+  text-decoration: underline;
+}
+
+/* ===== sub menu ===== */
+.footer-wrap >.footer-top >.f-depth01 > li >.f-depth02 {
+
+}
+.footer-wrap >.footer-top >.f-depth01 > li >.f-depth02 > li {
+
+}
+.footer-wrap >.footer-top >.f-depth01 > li >.f-depth02 > li:hover > a {
+  text-decoration: underline;
+}
+.footer-wrap >.footer-top >.f-depth01 > li >.f-depth02 > li > a {
+  display: inline-block;
+  width: 90%;
+  margin-bottom: 15px;
+  letter-spacing: -0.25px;
+  color: #666;
+  font-size: 15px;
 }
