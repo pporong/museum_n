@@ -205,4 +205,18 @@ $(document).ready(function(){
 
 
 
+
+      // 탑버튼
+      $('.top-btn').click(function(){
+
+        $('html, body').animate({
+        'scrollTop' : 0 ,
+        } , 50)
+      
+      })
 });
+
+
+$(window).scroll(function(){
+    let scrollTop = $(this).scrollTop()
+})
