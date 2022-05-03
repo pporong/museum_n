@@ -109,8 +109,12 @@ body {
     left: 0;
     background: #000;
     z-index: 101;
+    transition: 1s;
 
-    /* display: none; */
+    display: none;
+  }
+  .gnb-area >.top-menu-wrap >.top-menu >.menu.active >.list {
+    display: inline-block;
   }
   .gnb-area >.top-menu-wrap >.top-menu >.menu >.list > li {
     margin-bottom: 15px;
@@ -186,7 +190,6 @@ body {
   font-weight: 500;
   transition: 0.2s;
   line-height: 120px;
-  
 }
 .gnb-area >.row-menu >.nav-box >.depth01 > li > a:hover {
   color: #3f0b9f;
@@ -201,11 +204,12 @@ body {
   display: flex;
   justify-content: center;
   z-index: 90;
-
-  display: none;
+  opacity: 0;
+  transition-delay: 0.5s;
 }
 .gnb-area >.row-menu >.nav-box >.depth01 > li:hover >.depth02 {
-  display: flex;
+  opacity: 1;
+  transition-delay: 0s;
 }
 .gnb-area >.row-menu >.nav-box >.depth01 > li >.depth02 > li {
   display: inline-block;
@@ -243,7 +247,6 @@ body {
   box-sizing: border-box;
   background: #333;
   text-align: center;
-
   display: none;
 }
 .gnb-area >.row-menu >.nav-box >.depth01 > li >.depth02> li:hover >.depth03 {
@@ -620,17 +623,33 @@ body {
 .info-section >.main-info-r > ul > li > a {
   display: inline-block;
   color: #3f0b9f;
-  border-bottom: 3px solid #3f0b9f;
+  border-bottom: 3px solid transparent;
   padding: 8px 6px 28px 7px;
   font-size: 32px;
   font-weight: bold;
-
+  position: relative;
   transition: 0.25s;
+}
+
+.info-section >.main-info-r > ul > li > a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #3f0b9f;
+  position: absolute;
+  bottom: -3px;
+  transition: 0.5s;
+  left: 0;
+  z-index: -1;
 }
 .info-section >.main-info-r > ul > li > a:hover {
   color: white;
 }
 
+.info-section >.main-info-r > ul > li > a:hover::after {
+  height: 85px;
+}
 
 
 /* section02 st */
@@ -1405,6 +1424,7 @@ body {
   display: inline-block;
   clear: both;
   margin-bottom: 25px;
+  position: relative;
 }
 .footer-wrap >.footer-bottom >.fb-box02 >.familysite > a {
   display: block;
@@ -1424,6 +1444,47 @@ body {
 .footer-wrap >.footer-bottom >.fb-box02 >.familysite03 > a > span {
   padding: 12px 92px 12px 0;  
 }
+
+
+/* 푸터2의 메뉴 메뉴 */
+.footer-wrap >.footer-bottom >.fb-box02 >.familysite >a.active {
+  color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #000;
+  background-image: url(../IMG/ico_down_white_img.png);
+  background-repeat: no-repeat;
+  background-size: 22px 12px;
+  background-position: 90%;
+}
+.footer-wrap >.footer-bottom >.fb-box02 >.familysite >.list {
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  padding: 35px 0;
+  text-align: center;
+  background: #000;
+
+  display: none;
+}
+.footer-wrap >.footer-bottom >.fb-box02 >.familysite >.list.active {
+  display: inline;
+}
+.footer-wrap >.footer-bottom >.fb-box02 >.familysite >.list > li {
+  margin-bottom: 15px;
+}
+.footer-wrap >.footer-bottom >.fb-box02 >.familysite >.list > li > a {
+  font-size: 14px;
+  color: #cccccc;
+  white-space: nowrap;
+}
+.footer-wrap >.footer-bottom >.fb-box02 >.familysite >.list > li > a:hover {
+  color: #ffcc33;
+  text-decoration: underline;
+}
+
+
 
 /* 하단 푸터 3 */
 .footer-wrap >.footer-bottom >.fb-box03 > ul > li:first-child {

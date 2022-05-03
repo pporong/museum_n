@@ -1,7 +1,27 @@
 $(document).ready(function(){
 
-    // 현재 슬라이드 닷츠
+    // a태그 속성 해제
+    $("a[href='#']").click(function(e){
+        e.preventDefault();
+    });
 
+
+    // 탑메뉴
+    $('.gnb-area >.top-menu-wrap >.top-menu >.menu04').click(function(){
+        $('.gnb-area >.top-menu-wrap >.top-menu >.menu04').toggleClass('active')
+    })
+    $('.gnb-area >.top-menu-wrap >.top-menu >.menu04').mouseleave(function(){
+        setTimeout(function(){
+                    $('.gnb-area >.top-menu-wrap >.top-menu >.menu04').removeClass('active')
+
+        }, 700)
+    })
+    $('.gnb-area >.top-menu-wrap >.top-menu >.menu05').click(function(){
+        $('.gnb-area >.top-menu-wrap >.top-menu >.menu05').toggleClass('active')
+    })
+
+
+    // 현재 슬라이드 닷츠
     // init slide change : 메인슬라이드
     $('.all-wrap >.main-visual >.main-slider').on('init', function(event, slick){
         $('.slider-dots-box >.slider-dots >.dots').eq(0).addClass('active');
@@ -202,7 +222,40 @@ $(document).ready(function(){
 
 
 
-
+    // 푸터 메뉴
+    $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite01 > a').click(function(){
+        if( $(this).hasClass('active') ){
+            $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite01 > a').removeClass('active')
+            $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite01 >.list').removeClass('active')
+        } else {
+        $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite > a').removeClass('active')
+        $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite >.list').removeClass('active')
+        $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite01 > a').addClass('active')
+        $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite01 >.list').addClass('active')
+        }
+    })  
+    $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite02 > a').click(function(){
+        if( $(this).hasClass('active') ){
+            $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite02 > a').removeClass('active')
+            $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite02 >.list').removeClass('active')
+        } else {
+        $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite > a').removeClass('active')
+        $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite >.list').removeClass('active')
+        $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite02 > a').addClass('active')
+        $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite02 >.list').addClass('active')
+        }
+    })
+    $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite03 > a').click(function(){
+        if( $(this).hasClass('active') ){
+            $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite03 > a').removeClass('active')
+            $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite03 >.list').removeClass('active')
+        } else {
+        $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite > a').removeClass('active')
+        $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite >.list').removeClass('active')
+        $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite03 > a').addClass('active')
+        $('.footer-wrap >.footer-bottom >.fb-box02 >.familysite03 >.list').addClass('active')
+        }
+    })
 
 
 
@@ -216,7 +269,7 @@ $(document).ready(function(){
       })
 });
 
-
+// 탑버튼 윈도우
 $(window).scroll(function(){
     let scrollTop = $(this).scrollTop()
 })
